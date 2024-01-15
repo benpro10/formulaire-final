@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'enregisrement</title>
+</head>
+<body>
+    <main>
+        <h1>Formulaires d'enregisrement</h1>
+        <section>
+            <form action="" method="get">
+                <fieldset>
+                    <legend>vos premieres informations</legend>
+                <label for="nom">Entrez votre nom</label>:  <input type="text" name="nom" id="nom" placeholder="Kyalondawa" size="25" maxlength="25" autofocus><br>
+                <br>
+                <label for="prenom">Entrez votre prenom</label>: <input type="text" name="prenom" id="prenom" placeholder="Exauce" size="25" maxlength="25"><br>
+                <br>
+                <label for="postnom">Entrez votre postnom</label>: <input type="text" name="postnom" id="nom" placeholder="EBK" size="25" maxlength="25"><br>
+                <br>
+                <label for="message">un message pour nous ameliorer</label><br> <textarea name="message" id="message" cols="30" rows="10">votre message</textarea><br>
+                <br>
+                <label for="mail">Entrez votre mail</label>: <input type="email" name="mail" id="mail" placeholder="Nom@exemple.com" ><br>
+                <br>
+                <label for="password">Entrez votre mot de passe</label>: <input type="password" name="password" id="password"><br>
+                <br><label for="tel">Entrez votre numero de télephone</label><br> <input type="tel" name="tel" id="tel" value="+243 810 000 000"><br>
+                <br>
+                <label for="age">Entrez votre age</label>: <input type="number" name="age" id="age" value="18" min="18" max="99"><br>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>votre progression</legend>
+                <label for="progress">Entrez votre niveau de progression</label><br> <input type="range" name="progress" id="progress" ><br>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>vos deuxiemes infos</legend>
+                <label for="website">website</label>: <input type="url" name="website" id="mail" placeholder="https://www.website.com"><br>
+                <br>
+                <label for="date">Entrez votre date de naissance</label>: <input type="date" name="date" id="date" value="2006-01-01" min="1925-01-01" max="2006-01-01"><br>
+                <br>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>table de recherche</legend>
+                <label for="search">Que Recherchez-vous</label>: <input type="search" name="search" id="search" placeholder="Recherche"><br>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>faites votre choix</legend>
+                <p>Quelles boissons souhaitez-vous prendre?</p>
+                <input type="checkbox" name="alcool" id="alcool" checked="checked"> <label for="alcool">Alcoolique</label>
+                <input type="checkbox" name="nonalcool" id="nonalcool"> <label for="nonalcool">Non alcoolique</label>
+                <input type="checkbox" name="soda" id="soda" checked> <label for="soda">Soda</label>
+                <input type="checkbox" name="jus" id="jus" > <label for="jus">Jus</label>
+                <p>Genre</p>
+                <input type="radio" name="genre" id="masculin" value="masculin" checked> <label for="masculin">Masculin</label>
+                <input type="radio" name="genre" id="feminin" value="feminin"> <label for="feminin">feminin</label>
+                <input type="radio" name="genre" id="autre" value="autre"> <label for="autre">Autres</label><br>
+                <br>
+                <label for="pays">Dans quel pays se trove votre domicile</label><br>
+                <select name="pays" id="pays">
+                    <option value="france">France</option>
+                    <option value="canada" selected>Canada</option>
+                    <option value="usa">Usa</option>
+                    <option value="rdc">Congo-Kinshasa</option>
+                    <option value="congo">Congo-Brazzaville</option>
+                </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Envoie du formulaire</legend>
+                    <input type="submit" name="envoie" value="Envoyer formulaire" >
+                    <input type="reset" name="reprise" value="reprendre formulaire">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
